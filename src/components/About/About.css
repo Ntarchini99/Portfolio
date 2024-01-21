@@ -1,0 +1,54 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+.about-img img {
+    width: 25vw;
+    margin-left: 12%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 6rem;
+    color: #0ef;
+}
+
+.about-content{
+    margin-left: 8%;
+}
+
+.about-content h2 {
+    font-size: 4rem;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 4rem;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+    width: 90%;
+    color: #0ef;
+}
+
+.btn-cv {
+    background-color: blueviolet;
+    color: white;  
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-cv:hover {
+    background-color: darkviolet;  
+}
+ 
