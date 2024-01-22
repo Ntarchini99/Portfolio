@@ -11,7 +11,7 @@ const Header = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      setClick(false); 
+      setClick(false);
     }
   };
 
@@ -31,12 +31,17 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#crypto" onClick={() => scrollToSection('services')}>
+            <a href="#services" onClick={() => scrollToSection('services')}>
               Servicios
             </a>
           </li>
           <li>
-            <a href="#contacto" onClick={() => scrollToSection('Contacto')}>
+            <a href="#portfolio" onClick={() => scrollToSection('portfolio')}>
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => scrollToSection('contact')}>
               Contacto
             </a>
           </li>

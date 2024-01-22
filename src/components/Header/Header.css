@@ -5,6 +5,7 @@
 	top: 0;
 	left: 0;
 	z-index: 10;
+	background-color: black;
 }
 
 .header .container {
@@ -25,18 +26,18 @@
 
 .nav-menu li {
 	padding: 0 1rem;
-    list-style: none;
+	list-style: none;
 }
 
 .nav-menu a {
 	font-size: 1rem;
 	font-weight: 600;
 	color: #0ef;
-    text-decoration: none;
+	text-decoration: none;
 }
 
-.Text-nav{
-    color: #0ef ;
+.Text-nav {
+	color: #0ef;
 }
 
 .hamburger {
@@ -44,22 +45,45 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1240px) {
+@media (max-width: 1024px) {
+	.header {
+		width: 100%;
+		height: 90px;
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+
+	.header .container {
+		justify-content: space-between;
+	}
+
+	.nav-menu a {
+		font-size: 2rem;
+		font-weight: 600;
+		color: #0ef;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 950px) {
 	.hamburger {
 		display: flex;
 	}
 
 	.nav-menu {
+		background-color: black;
 		position: fixed;
 		flex-direction: column;
 		justify-content: start;
 		top: 90px;
 		right: -100%;
 		width: 50%;
-		height: 100vh;
+		height: 40vh;
 		transition: 0.4s;
 		z-index: 2;
-		background: #ffffff;
+		color: #fff;
 		border-left: 1px solid #eeeeee;
 	}
 
@@ -70,11 +94,43 @@
 	.nav-menu li {
 		padding: 1rem;
 		width: 100%;
-		border-bottom: 1px solid #eeeeee;
 	}
 
 	.nav-menu a {
 		font-size: 1.2rem;
-		color: black;
+	}
+}
+
+@media (max-width: 768px) {
+	.hamburger {
+		display: flex;
+	}
+
+	.nav-menu {
+		background-color: black;
+		position: fixed;
+		flex-direction: column;
+		justify-content: start;
+		top: 90px;
+		right: -100%;
+		width: 50%;
+		height: 22vh;
+		transition: 0.4s;
+		z-index: 2;
+		color: #fff;
+		border: #0ef;
+	}
+
+	.nav-menu.active {
+		right: -30%;
+	}
+
+	.nav-menu li {
+		padding: 1rem;
+		width: 100%;
+	}
+
+	.nav-menu a {
+		font-size: 1.2rem;
 	}
 }

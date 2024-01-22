@@ -1,0 +1,81 @@
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+.heading-contact {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.form {
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 90%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background: #323946;
+  border-radius: .8rem;
+  margin: .7rem 0;
+  border: none;
+  color: white;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.Button,
+.ButtonSending {
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: #0ef;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  border-radius: .8rem;
+  transition: background-color 0.3s;
+}
+
+.Button:hover {
+  background-color: #0bd;
+}
+
+.ButtonSending {
+  cursor: not-allowed;
+}
+
+#textarea {
+  height: 200px;
+}

@@ -22,7 +22,7 @@ const HomePage = () => {
         return () => {
             typed.destroy();
         };
-    }, []); 
+    }, []);
 
     return (
         <section id="home" className="home">

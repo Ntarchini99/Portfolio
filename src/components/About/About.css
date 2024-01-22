@@ -8,7 +8,7 @@
 
 .about-img img {
     width: 25vw;
-    margin-left: 12%;
+    margin-left: 30%;
 }
 
 .heading {
@@ -17,8 +17,9 @@
     color: #0ef;
 }
 
-.about-content{
-    margin-left: 8%;
+.about-content {
+    margin-left: 11%;
+    text-align: justify;
 }
 
 .about-content h2 {
@@ -27,12 +28,8 @@
     line-height: 1.2;
 }
 
-.about-content h3 {
-    font-size: 4rem;
-}
-
 .about-content p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 2rem 0 3rem;
     width: 90%;
     color: #0ef;
@@ -40,7 +37,7 @@
 
 .btn-cv {
     background-color: blueviolet;
-    color: white;  
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -49,6 +46,39 @@
 }
 
 .btn-cv:hover {
-    background-color: darkviolet;  
+    background-color: darkviolet;
 }
- 
+
+@media (max-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-img img {
+        width: 50vw;
+        margin-left: 0%;
+    }
+
+    .about-content h2 {
+        font-size: 5rem;
+    }
+
+    .about-content p {
+        font-size: 1.8rem;
+        margin: 2rem 0 3rem;
+        width: 90%;
+        color: #0ef;
+    }
+
+    .btn-cv {
+        background-color: blueviolet;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+}

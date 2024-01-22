@@ -1,5 +1,6 @@
-import './About.css';  
+import './About.css';
 import perfil from '../../assets/img/perfil.png';
+import cv from '../../assets/pdf/Curriculum-frontend.pdf';
 
 const About = () => {
     return (
@@ -12,7 +13,7 @@ const About = () => {
                 <p>
                     Estoy familiarizado con FIGMA para crear prototipos acorde al pedido del cliente. También tengo buen manejo de HTML5, CSS3, Bootstrap, Sass, JavaScript y ReactJS. Tengo conocimientos en SEO y SERVIDORES. Me encanta trabajar en equipo, me adapto muy rápido y siempre estoy dispuesto a aprender cosas nuevas y seguir nutriéndome de otras personas. Estudié la carrera de Frontend Developer en el Bootcamp de CoderHouse, en el cual quedé dentro del top 10 de mejores alumnos.
                 </p>
-                <a href="./pdf/Curriculum-frontend.pdf" target="_blank" className="btn-cv">
+                <a href={cv} target="_blank" className="btn-cv">
                     Descargar CV
                 </a>
             </div>
