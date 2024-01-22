@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="container">
-        <h1 className="Text-nav">Welcome 💻</h1>
+        <h1 className="Text-nav">Welcome <span className='hi'>🖐️</span></h1>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
             <a href="#" onClick={() => scrollToSection('home')}>
@@ -49,9 +49,9 @@ const Header = () => {
 
         <div className="hamburger" onClick={handleClick}>
           {click ? (
-            <FaTimes size={20} style={{ color: '#333333' }} />
+            <FaTimes size={20} style={{ color: '#fff' }} />
           ) : (
-            <FaBars size={20} style={{ color: '#333333' }} />
+            <FaBars size={20} style={{ color: '#fff' }} />
           )}
         </div>
       </div>
