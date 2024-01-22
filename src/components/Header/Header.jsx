@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import './Header.css';
 
 const Header = () => {
@@ -7,43 +8,35 @@ const Header = () => {
 
   const handleClick = () => setClick(!click);
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      setClick(false);
-    }
-  };
-
   return (
     <div className="header">
       <div className="container">
         <h1 className="Text-nav">Welcome <span className='hi'>🖐️</span></h1>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
-            <a href="#" onClick={() => scrollToSection('home')}>
+            <Link to="home" smooth={true} duration={500} onClick={handleClick}>
               Inicio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" onClick={() => scrollToSection('about')}>
+            <Link to="about" smooth={true} duration={500} onClick={handleClick}>
               Sobre Mi
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#services" onClick={() => scrollToSection('services')}>
+            <Link to="services" smooth={true} duration={500} onClick={handleClick}>
               Servicios
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#portfolio" onClick={() => scrollToSection('portfolio')}>
+            <Link to="portfolio" smooth={true} duration={500} onClick={handleClick}>
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" onClick={() => scrollToSection('contact')}>
+            <Link to="contact" smooth={true} duration={500} onClick={handleClick}>
               Contacto
-            </a>
+            </Link>
           </li>
         </ul>
 

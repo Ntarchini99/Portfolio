@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import './HomePage.css';
 import art from '../../assets/img/art.png';
 
 const HomePage = () => {
     const multitextRef = useRef(null);
+    const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
         const typedOptions = {
@@ -19,13 +20,19 @@ const HomePage = () => {
 
         const typed = new Typed(multitextRef.current, typedOptions);
 
+        // Indica que el componente se ha cargado después de un tiempo (por ejemplo, 1 segundo)
+        const timeoutId = setTimeout(() => {
+            setIsLoaded(true);
+        },400);
+
         return () => {
+            clearTimeout(timeoutId);
             typed.destroy();
         };
     }, []);
 
     return (
-        <section id="home" className="home">
+        <section id="home" className={`home ${isLoaded ? 'home-loaded' : ''}`}>
             <div className="home-content">
                 <h3>Hola, me llamo</h3>
                 <h1>Nazareno Tarchini</h1>
