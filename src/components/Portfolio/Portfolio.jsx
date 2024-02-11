@@ -21,7 +21,7 @@ const Portfolio = () => {
             id: 3,
             title: 'BlackLab Strategies',
             description: 'Sitio web para asesoria financiera y de Trading',
-            imageUrl: 'https://i.postimg.cc/rwfftMfm/blacklab.png',
+            imageUrl: 'https://i.postimg.cc/zGMd7Sz4/blacklabs.png',
             link: 'https://blacklabstrategies.netlify.app/home',
         },
         {

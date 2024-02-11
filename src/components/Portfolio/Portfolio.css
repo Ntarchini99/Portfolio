@@ -94,6 +94,29 @@
     opacity: 0;
 }
 
+@media (max-width: 1440px) {
+    .portfolio {
+        min-height: 100vh;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 10%;
+    }
+
+    .portfolio-layer h4 {
+        font-size: 1.8rem;
+    
+    }
+    
+    .portfolio-layer p {
+        font-size: 1.2rem;
+        margin: 0.1rem 0 1rem;
+    }
+
+    .portfolio-layer a {
+        margin-top: 1%;
+    }
+}
+
 @media (max-width: 1024px) {
     .portfolio {
         min-height: 100vh;
