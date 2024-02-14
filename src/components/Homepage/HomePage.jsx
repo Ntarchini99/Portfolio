@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import './HomePage.css';
 import art from '../../assets/img/art.png';
+import ButtonWhatsapp from '../ButtonWhatsapp/ButtonWhatsapp';
+
 
 const HomePage = () => {
     const multitextRef = useRef(null);
@@ -20,10 +22,10 @@ const HomePage = () => {
 
         const typed = new Typed(multitextRef.current, typedOptions);
 
-        // Indica que el componente se ha cargado después de un tiempo (por ejemplo, 1 segundo)
+
         const timeoutId = setTimeout(() => {
             setIsLoaded(true);
-        },400);
+        }, 400);
 
         return () => {
             clearTimeout(timeoutId);
@@ -47,6 +49,7 @@ const HomePage = () => {
             <div className="home-img">
                 <img src={art} alt="Home" />
             </div>
+            <ButtonWhatsapp/>
         </section>
     );
 };

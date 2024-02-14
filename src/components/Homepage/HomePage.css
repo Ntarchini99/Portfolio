@@ -102,6 +102,12 @@ span {
     }
 }
 
+@media (max-width: 1440px) {
+    html {
+        font-size: 80%;
+    }
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
