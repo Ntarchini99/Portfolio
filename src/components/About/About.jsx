@@ -1,6 +1,6 @@
 import './About.css';
 import perfil from '../../assets/img/perfil.png';
-import cv from '../../assets/pdf/Curriculum-tutor.pdf';
+import cv from '../../assets/pdf/curriculum-tutor.pdf';
 
 const About = () => {
     return (
