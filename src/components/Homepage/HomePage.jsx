@@ -40,7 +40,7 @@ const HomePage = () => {
                 <h1>Nazareno Tarchini</h1>
                 <h4 className='text-homep'>Soy <span ref={multitextRef}></span></h4>
                 <p>Tengo 24 años, vivo en Buenos Aires y puedo trabajar en remoto para cualquier parte del mundo.</p>
-                <a href="https://drive.google.com/drive/folders/1mBJC80kaupvHgXTmGSBDywoFU-BlDai4?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a className='none' href="https://drive.google.com/drive/folders/1mBJC80kaupvHgXTmGSBDywoFU-BlDai4?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button className="shadow__btn">
                         Certificados
                     </button>

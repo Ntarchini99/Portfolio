@@ -55,7 +55,12 @@ span {
     margin-top: 2%;
 }
 
+.none{
+    text-decoration: none;
+}
+
 .shadow__btn {
+    margin-left: 0;
     margin-top: 8%;
     padding: 10px 20px;
     border: none;
