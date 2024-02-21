@@ -1,5 +1,5 @@
 .services h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 3rem;
 }
 
@@ -15,7 +15,7 @@
 
 .services-container .services-box {
   flex: 1 1 20rem;
-  background: lightblue;
+  background: rgb(103, 92, 156);
   padding: 2rem 1rem 3rem;
   border-radius: 1rem;
   text-align: center;
@@ -30,13 +30,13 @@
 }
 
 .services-box h3 {
-  color: black;
+  color: white;
   font-size: 2rem;
   margin-top: 5%;
 }
 
 .services-box p {
-  color: black;
+  color: white;
   font-size: 1.2rem;
   margin: 1rem 0 2rem;
 }
@@ -44,5 +44,5 @@
 .services-box i {
   font-size: 45px;
   padding: 8px;
-  color: navy;
+  color: white;
 }

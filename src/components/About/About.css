@@ -98,7 +98,11 @@
     height: 60%;
   }
   
-
+  @media (max-width: 1440px){
+    .about{
+      margin-top: -15%;
+    }
+  }
 
 @media (max-width: 768px) {
     .about {
@@ -120,16 +124,5 @@
         margin: 2rem 0 3rem;
         width: 90%;
         color: #0ef;
-    }
-
-    .btn-cv {
-        background-color: blueviolet;
-        color: white;
-        font-size: 1.5rem;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        display: inline-block;
-        cursor: pointer;
     }
 }
