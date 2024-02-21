@@ -6,8 +6,8 @@
 }
 
 .heading-contact {
-  margin-bottom: 3rem;
-  font-size: 4rem;
+  margin-bottom: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -24,6 +24,7 @@
 }
 
 label {
+  
   font-weight: bold;
   margin-bottom: 5px;
   color: white;
