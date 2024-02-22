@@ -119,7 +119,7 @@ const Contact = () => {
                 </svg>
               </div>
             </div>
-            <span>Send</span>
+            <span className="send">Send</span>
           </button>
 
         )}

@@ -55,6 +55,10 @@
     cursor: pointer;
     position: relative;
   }
+
+  .Download-button span{
+    color: white;
+  }
   
   .Download-button svg {
     margin-right: 8px;

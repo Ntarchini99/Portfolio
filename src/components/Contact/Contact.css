@@ -123,6 +123,10 @@ button:active {
   transform: scale(0.95);
 }
 
+.send{
+  color: white;
+}
+
 @keyframes fly-1 {
   from {
     transform: translateY(0.1em);
