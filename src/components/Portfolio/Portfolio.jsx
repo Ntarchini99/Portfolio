@@ -33,10 +33,10 @@ const Portfolio = () => {
         },
         {
             id: 5,
-            title: 'Vite Store',
-            description: 'Landing Page con catalogo para venta de impresiones 3D',
-            imageUrl: 'https://i.postimg.cc/FsDyTG3C/vitestore.png',
-            link: 'https://vitestore.netlify.app/',
+            title: 'SaborArte',
+            description: 'SPA de muestra para Frontend',
+            imageUrl: 'https://i.postimg.cc/P5vKHhSk/saborarte.png',
+            link: 'https://saborarrte.netlify.app/',
         },
         {
             id: 6,
